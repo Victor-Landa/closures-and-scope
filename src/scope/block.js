@@ -42,7 +42,7 @@ const anotherFunction2 = () => {
     setTimeout(() => {
       console.log(i);
     }, 1000);
-  } 
+  }
 }
 
 anotherFunction2(); // After 1 second => 0 1 2 3 4 5 6 7 8 9
