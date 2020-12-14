@@ -5,7 +5,7 @@ console.log(a); // 2
 console.log(a);
 var a = 2; // undefined
 
-nameOfDog('Chopper');
+nameOfDog('Chopper'); // Chopper
 
 function nameOfDog(name) {
   console.log(name);
