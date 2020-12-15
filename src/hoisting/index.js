@@ -10,3 +10,12 @@ nameOfDog('Chopper'); // Chopper
 function nameOfDog(name) {
   console.log(name);
 }
+
+// Caso 1: Antes del hoisting
+console.log(nombre); // undefined
+var nombre = 'Victor';
+
+// Caso 1: Después del hoisting
+var nombre;
+console.log(nombre);
+nombre = 'Victor';
