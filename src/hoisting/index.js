@@ -55,3 +55,32 @@ function filtrarProductos(productos) {
 
   return productosConOferta;
 }
+
+// Caso 3: Function declaration antes del hoisting
+saludar('Victor');
+
+function saludar(nombre) {
+  console.log('Hola' + nombre);
+}
+
+// Caso 3: Function declaration después del hoisting
+function saludar(nombre) {
+  console.log('Hola' + nombre);
+}
+
+saludar('Victor');
+
+// Caso 3.1: Función como expresión en lugar de declaración antes del hoisting
+saludar('Victor');
+
+var saludar = function saludar(nombre) {
+  console.log('Hola' + nombre);
+}
+
+// Caso 3.1: Función como expresión en lugar de declaración después del hoisting
+var saludar;
+saludar('Victor'); // TypeError: saludar is not a function
+
+saludar = function saludar(nombre) {
+  console.log('Hola' + nombre);
+}
